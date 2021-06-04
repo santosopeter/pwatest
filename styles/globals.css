@@ -14,3 +14,146 @@ a {
 * {
   box-sizing: border-box;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins' , sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+.App{
+  position:relative;
+}
+
+
+.loading-modal {
+  display:grid;
+  place-items:center;
+  color:#4A2E82;
+  height:100vh;
+  width: 100vw;
+}
+.loading-modal *{
+  text-align: center;
+}
+
+
+
+
+.category-list {
+  list-style-type:none;
+  display:flex;
+  background:#fff;
+  border-top:solid 1px #eee;
+}
+.category-list li{
+  transition: 0.25s ease;
+  font-weight:500;
+}
+.category-list li a{
+  padding: 1rem 0.5rem;
+  display:block;
+}
+.category-list li:hover {
+  background:#ddd;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  width:80vw;
+  
+  background: #ffffff88;
+  background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+  );
+  overflow: hidden;
+  backdrop-filter: blur(1rem);
+
+  box-shadow: 0.5rem 0.5rem 1rem #33333388;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  font-size: 4rem;
+  height: 10vh;
+}
+
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  background: #ffffff88;
+}
+nav ul a{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  cursor: pointer;
+  transition: 0.5s;
+
+  padding: 1rem;
+
+  flex:0 1;
+}
+
+nav ul a:hover{
+  filter: brightness(1.2) !important;
+  background: #ffffff88;
+}
+nav a{
+  text-decoration: none;
+}
+
+.page-title {
+  padding:0.5rem;
+}
+.page-title .span-title{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.page-title .span-desc{
+  font-size: 1rem;
+  opacity:0.8;
+}
+
+main{
+  width: 100%;
+}
+
+section {
+  padding: 1rem;
+}
+
+
+
+/* PRODUCT CARD */
+.product-buttons svg:hover{
+  cursor: pointer;
+  fill: #888;
+}
+
+.card .product-image,
+.card .product-name,
+.card .product-buttons svg{
+  cursor: pointer;
+  fill: #333;
+}
+
